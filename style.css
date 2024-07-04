@@ -1,0 +1,13 @@
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --azul: rgb(128, 61, 115);
+    --azul-fraco: #98c1d9ff;
+    --branco: #e0fbfcff;
+    --salmao: #ee6c4dff;
+    --azul-forte: #293241ff;
+    --fonte-texto:"Playfair Display", serif;
+    --fonte-titulo: "Bebas Neue", sans-serif;
+}
