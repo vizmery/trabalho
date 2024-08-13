@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
-margin: 0;
-padding: 0;
-font-weight:400
+    margin: 0;
+    padding: 0;
 }
 
 :root {
-    --azul: rgb(128, 61, 115);
+    --azul: #3d5a80ff;
     --azul-fraco: #98c1d9ff;
     --branco: #e0fbfcff;
     --salmao: #ee6c4dff;
@@ -17,16 +15,17 @@ font-weight:400
 }
 
 body{
-    background-color: var(--azul-forte) ;
-    color: var(--azul-fraco);
+    background-color: var(--azul-fraco);
+    color: var(--branco);
     display: flex;
     justify-content: center;
-    align-items: 100vh;
+    align-items: center;
+    min-height: 100vh;
     font-family: var(--fonte-texto);
 }
 
 .caixa-principal{
-    background-color: var(--azul-fraco);
+    background-color: var(--azul-forte);
     width: 90%;
     max-width: 600px;
     text-align: center;
@@ -34,6 +33,20 @@ body{
 }
 
 .titulo{
-    color: var(--azul-fraco);
+    color: var(--salmao);
     font-family: var(--fonte-titulo);
+}
+
+button{
+    background-color: var(--azul);
+    color: var(--salmao);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: 0.3s;
+    margin: 10px 10px;   
+}
+
+button:hover{
+    background-color: var(--azul-fraco);
 }

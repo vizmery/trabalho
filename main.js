@@ -6,10 +6,10 @@ const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [
     {
-        enunciado: "Enunciado 01",
-        alternativas: [
-            "alternativa 01",
-            "alternativa 02"
+        enunciado: " Maria, uma jovem de 22 anos, descobre que está grávida inesperadamente. Ela vive em um país onde o aborto ainda é um tema controverso e está considerando suas opções.",
+         alternativas: [
+            "Maria decide procurar uma clínica para realizar o aborto.",
+            "Maria decide continuar com a gravidez e procurar apoio."
         ]
     },
     {
@@ -43,38 +43,39 @@ const perguntas = [
 ]
 let atual = 0;
 let perguntaAtual;
+let historiaFinal = "";
 
-function mostraPergunta(){ 
+function mostrarPerguntas(){
+    if(atual >= perguntas.length){
+        mostraResultado();
+        return
+    }
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
-    mostraAlternativas();
-
+    caixaAlternativas.textContent = ""
+    mostrarAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativa){
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa;
-        caixaAlternativas.appendChild(botaoAlternativas)
-    }
-}
-
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
+function mostrarAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas){
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", function(){
-            atual++;
-            mostraPergunta();
-        })
-        caixaAlternativas.appendChild(botaoAlternativas)
+        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa))
+        caixaAlternativas.appendChild(botaoAlternativas);
     }
 }
 
-function respostaSelecionada(opcaoSelecionada) {
-atual++;
-mostraPergunta();
+function respostaSelecionada(opcaoSelecionada){
+    const afirmacoes = opcaoSelecionada.afirmacao;
+    historiaFinal += afirmacoes + " ";
+    atual++;
+    mostrarPerguntas();
 }
 
+function mostraResultado(){
+    caixaPerguntas.textContent = " Inicio do texto... "
+    textoResultado.textContent = historiaFinal;
+    caixaAlternativas.textContent = "";
+}
 
-mostraPergunta();
+mostrarPerguntas();
