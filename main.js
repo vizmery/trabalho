@@ -13,31 +13,31 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Enunciado 02",
+        enunciado:"Maria decide continuar com a gravidez e busca apoio de sua família e amigos",
         alternativas: [
-            "alternativa 01",
-            "alternativa 02"
+            "A família de Maria a apoia e ela encontra recursos para continuar seus estudos e criar o bebê.",
+            " A família de Maria não apoia sua decisão, e ela precisa encontrar um novo caminho por conta própria"
         ]
     },
     {
-        enunciado: "Enunciado 03",
+        enunciado: "Após o procedimento, Maria sente uma mistura de alívio e tristeza. Ela começa a participar de grupos de apoio para mulheres que passaram por situações semelhantes.",
         alternativas: [
-            "alternativa 01",
-            "alternativa 02"
+            " Maria se torna uma defensora dos direitos reprodutivos das mulheres e se engaja em campanhas pela legalização do aborto.",
+            " Maria decide focar em sua carreira e em seus estudos, tentando deixar a experiência para trás."
         ]
     },
     {
-        enunciado: "Enunciado 04",
+        enunciado: " Maria decide não realizar o aborto e, em vez disso, opta por colocar o bebê para adoção após o nascimento",
         alternativas: [
-            "alternativa 01",
-            "alternativa 02"
+            "Maria mantém contato com a família adotiva e sente que tomou a decisão certa",
+            "Maria tem dificuldades emocionais com a decisão de adoção e busca terapia para lidar com seus sentimentos"
         ]
     },
     {
-        enunciado: "Enunciado 05",
+        enunciado: "Com o apoio da família, Maria consegue equilibrar os estudos e a maternidade. Ela começa a pensar em seu futuro e no futuro do bebê",
         alternativas: [
-            "alternativa 01",
-            "alternativa 02"
+            " Maria encontra uma organização que ajuda mães jovens a continuarem seus estudos e decide se inscrever",
+            " Maria decide pausar os estudos para se dedicar totalmente à criação do bebê"
         ]
     },
 ]
