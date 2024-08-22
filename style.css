@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --azul: #3d5a80ff;
-    --azul-fraco: #98c1d9ff;
+    --azul: rgb(120, 14, 74);
+    --azul-fraco: rgb(169, 45, 159);
     --branco: #e0fbfcff;
     --salmao: #ee6c4dff;
     --azul-forte: #293241ff;
