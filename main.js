@@ -10,10 +10,12 @@ const perguntas = [
     alternativas: [
         {
             texto:"Maria decide procurar uma clínica para realizar o aborto.",
-            
-        {
+            afirmacao:""
+        },
+    {
+        
             texto:"Maria decide continuar com a gravidez e procurar apoio.",
-           
+           afirmacao:""
         }   
     ]
 },
@@ -22,10 +24,11 @@ const perguntas = [
     alternativas: [
         {
             texto: " Maria se torna uma defensora dos direitos reprodutivos das mulheres e se engaja em campanhas pela legalização do aborto. ",
-            
+            afirmacao: "maria se torna uma defensora"
         },
         {
-            texto: " Maria decide focar em sua carreira e em seus estudos, tentando deixar a experiência para trás."
+            texto: " Maria decide focar em sua carreira e em seus estudos, tentando deixar a experiência para trás.",
+            afirmacao: "Maria decide focar em sua carreira"
   ,
            
 
@@ -33,26 +36,28 @@ const perguntas = [
     ]
 },
 {
-    enunciado:" Maria decide não realizar o aborto e, em vez disso, opta por colocar o bebê para adoção após o nascimento" ,
+    enunciado:" Maria decide não realizar o aborto e, em vez disso, opta por colocar o bebê para adoção após o nascimento." ,
     alternativas: [
         {
-            texto: "Maria mantém contato com a família adotiva e sente que tomou a decisão certa" ,
-            
+            texto: "Maria mantém contato com a família adotiva e sente que tomou a decisão certa." ,
+        
+
         },
         {
-            texto: "Maria tem dificuldades emocionais com a decisão de adoção e busca terapia para lidar com seus sentimentos" ,
-           
+            texto: "Maria tem dificuldades emocionais com a decisão de adoção e busca terapia para lidar com seus sentimentos." ,
+        }
     ]
+
 },
 {
-    enunciado: "Com o apoio da família, Maria consegue equilibrar os estudos e a maternidade. Ela começa a pensar em seu futuro e no futuro do bebê" ,
+    enunciado: "Com o apoio da família, Maria consegue equilibrar os estudos e a maternidade. Ela começa a pensar em seu futuro e no futuro do bebê." ,
     alternativas: [
         {
-            texto: " Maria encontra uma organização que ajuda mães jovens a continuarem seus estudos e decide se inscrever" ,
+            texto: "Maria encontra uma organização que ajuda mães jovens a continuarem seus estudos e decide se inscrever." ,
            
         },
         {
-            texto:  " Maria decide pausar os estudos para se dedicar totalmente à criação do bebê"
+            texto:  "Maria decide pausar os estudos para se dedicar totalmente à criação do bebê."
 ,
 
         }
@@ -92,7 +97,7 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    caixaPerguntas.textContent = " Inicio do texto... "
+    caixaPerguntas.textContent = "  "
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
